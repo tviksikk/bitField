@@ -110,7 +110,14 @@ TSet TSet::operator~(void)
 	return temp;
 }
 
-
+void TSet::printSquard()
+{
+	for (size_t i = 0; i < s.GetMaxPower();i++)
+	{
+		if (s.IsMember(i))
+			ostr << i*i << endl;
+	}
+}
 
 istream &operator>>(istream &istr, TSet &s) 
 {

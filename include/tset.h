@@ -42,6 +42,7 @@ public:
   TSet operator+ (const TSet &s);  // объединение
   TSet operator* (const TSet &s);  // пересечение
   TSet operator~ (void);           // дополнение
+  void printSquard();
 
   friend istream &operator>>(istream &istr, TSet &bf);
   friend ostream &operator<<(ostream &ostr, const TSet &bf);
